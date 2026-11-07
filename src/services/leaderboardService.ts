@@ -1,0 +1,90 @@
+import { FacultyLeaderboardEntry, LeaderboardEntry } from '../types';
+
+export const MOCK_STUDENT_LEADERBOARD: LeaderboardEntry[] = [
+  {
+    rank: 1,
+    id: 'usr-001',
+    name: 'Sarah Mahmoud',
+    faculty: 'Faculty of Science',
+    avatarInitial: 'S',
+    greenPoints: 1280,
+    trend: 'up',
+  },
+  {
+    rank: 2,
+    id: 'usr-002',
+    name: 'Omar Hassan',
+    faculty: 'Faculty of Engineering',
+    avatarInitial: 'O',
+    greenPoints: 1140,
+    trend: 'same',
+  },
+  {
+    rank: 3,
+    id: 'usr-003',
+    name: 'Nour El-Din',
+    faculty: 'Faculty of Science',
+    avatarInitial: 'N',
+    greenPoints: 960,
+    trend: 'up',
+  },
+  {
+    rank: 4,
+    id: 'usr-101',
+    name: 'Ahmed',
+    faculty: 'Faculty of Science',
+    avatarInitial: 'A',
+    greenPoints: 720,
+    isCurrentUser: true,
+    trend: 'up',
+  },
+  {
+    rank: 5,
+    id: 'usr-005',
+    name: 'Mariam Ali',
+    faculty: 'Faculty of Computer Science',
+    avatarInitial: 'M',
+    greenPoints: 680,
+    trend: 'down',
+  },
+  {
+    rank: 6,
+    id: 'usr-006',
+    name: 'Youssef Ibrahim',
+    faculty: 'Faculty of Arts',
+    avatarInitial: 'Y',
+    greenPoints: 590,
+    trend: 'same',
+  },
+];
+
+export const MOCK_FACULTY_LEADERBOARD: FacultyLeaderboardEntry[] = [
+  {
+    rank: 1,
+    facultyName: 'Faculty of Science',
+    totalPoints: 14250,
+    activeStudents: 42,
+    avatarInitial: 'S',
+  },
+  {
+    rank: 2,
+    facultyName: 'Faculty of Engineering',
+    totalPoints: 12800,
+    activeStudents: 38,
+    avatarInitial: 'E',
+  },
+  {
+    rank: 3,
+    facultyName: 'Faculty of Computer & Information',
+    totalPoints: 9400,
+    activeStudents: 29,
+    avatarInitial: 'C',
+  },
+  {
+    rank: 4,
+    facultyName: 'Faculty of Business',
+    totalPoints: 6100,
+    activeStudents: 18,
+    avatarInitial: 'B',
+  },
+];

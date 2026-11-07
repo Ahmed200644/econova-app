@@ -1,0 +1,66 @@
+import { RewardItem, UserReward } from '../types';
+
+export const MOCK_REWARDS_CATALOG: RewardItem[] = [
+  {
+    id: 'rwd-001',
+    title: 'Campus Cafe 20% Off Coffee',
+    vendor: 'Luxor Campus Cafe',
+    category: 'food',
+    pointsCost: 200,
+    originalValue: 'EGP 25',
+    iconName: 'coffee',
+    description: 'Get 20% off any hot or cold espresso beverage at the main campus library cafe.',
+    terms: 'Valid for 30 days from redemption. Show QR code to cashier upon ordering. One voucher per order.',
+    availableStock: 50,
+  },
+  {
+    id: 'rwd-002',
+    title: 'Free 50-Page Print Pass',
+    vendor: 'University Copy Center',
+    category: 'prints',
+    pointsCost: 350,
+    originalValue: 'EGP 50',
+    iconName: 'printer',
+    description: 'Free printing and scanning for academic papers, research, or course material.',
+    terms: 'Valid at Science & Engineering copy stations. Excludes color poster printing.',
+    availableStock: 30,
+  },
+  {
+    id: 'rwd-003',
+    title: 'EcoNova Steel Water Bottle',
+    vendor: 'Eco Store',
+    category: 'eco_gear',
+    pointsCost: 600,
+    originalValue: 'EGP 150',
+    iconName: 'gift',
+    description: 'Reusable insulated 750ml stainless steel campus water bottle with EcoNova branding.',
+    terms: 'Pick up at Student Union Booth B during campus hours.',
+    availableStock: 15,
+  },
+  {
+    id: 'rwd-004',
+    title: 'Campus Bookstore 15% Discount',
+    vendor: 'Luxor University Bookstore',
+    category: 'voucher',
+    pointsCost: 400,
+    originalValue: 'EGP 75',
+    iconName: 'shopping-bag',
+    description: '15% discount on all stationeries, notebooks, and university merch.',
+    terms: 'Cannot be combined with other promotional offers.',
+    availableStock: 40,
+  },
+];
+
+export const INITIAL_USER_REWARDS: UserReward[] = [
+  {
+    id: 'urwd-001',
+    rewardId: 'rwd-001',
+    title: 'Campus Cafe 20% Off Coffee',
+    vendor: 'Luxor Campus Cafe',
+    pointsCost: 200,
+    code: 'ECO-CAFE-9482',
+    claimedAt: new Date(Date.now() - 3600000 * 24 * 2).toISOString(),
+    expiresAt: new Date(Date.now() + 3600000 * 24 * 28).toISOString(),
+    status: 'active',
+  },
+];
