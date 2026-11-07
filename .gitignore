@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.gitkeep
+.DS_Store
+*.log
+node_modules
+
+# Supabase credentials
+.env

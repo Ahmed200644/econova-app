@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "EcoNova",
+    "slug": "econova-app",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#064E3B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "EcoNova needs camera access to scan recycling station QR codes."
+      }
+    },
+    "android": {
+      "package": "com.econova.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#064E3B"
+      },
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "EcoNova needs camera access to scan recycling station QR codes."
+        }
+      ],
+      "expo-barcode-scanner"
+    ]
+  }
+}
